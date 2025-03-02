@@ -22,7 +22,7 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
-        #working-directory: terraform
+        working-directory: terraform
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
@@ -30,4 +30,4 @@ jobs:
         
       - name: Terraform Apply
         run: terraform destroy -auto-approve
-        #working-directory: terraform
+        working-directory: terraform
